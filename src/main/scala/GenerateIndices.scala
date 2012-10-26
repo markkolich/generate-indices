@@ -27,7 +27,6 @@ object GenerateIndices {
     // When using an embedded stylesheet in an XML literal, a double curly brace
     // "{{" or "}}" is the escape pattern mojo to actually get a curly brace.
     <html>
-    <!-- Generated using https://github.com/markkolich/generate-indices -->
     <head><style type="text/css">body{{font-family:sans-serif;font-size:20px;color:#B78E68;}}h1{{font-size:30px;}}ul{{list-style:none;padding-left:20px;}}a:visited{{color:blue;}}</style></head>
     <body>
       <h1>{ path(root, dir) }</h1>
@@ -35,6 +34,8 @@ object GenerateIndices {
         <li><a href="../">..</a></li>
         { for (f <- dirs ::: files) yield <li><a href={ f }>{ f }</a></li> }
       </ul>
+      <hr/>
+      Generated using <a href="https://github.com/markkolich/generate-indices">generate-indices</a>.
     </body>
     </html>
   }
