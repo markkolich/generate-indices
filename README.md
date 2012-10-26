@@ -18,22 +18,22 @@ Let's say you want to generate index.html pages for all files and directories un
 
 This project is built using <a href="https://github.com/harrah/xsbt">SBT (the Simple Build Tool)</a>.
 
-To clone and build generate-indices, you must have <a href="http://www.scala-sbt.org/release/docs/Getting-Started/Setup">SBT installed and configured on your computer</a>.
+To clone+build this project, you must have <a href="http://www.scala-sbt.org/release/docs/Getting-Started/Setup">SBT installed and configured on your computer</a>.
 
-To build, clone the repository.
+First, clone the repository.
 
     #~> git clone git://github.com/markkolich/generate-indices.git
 
-Run SBT from within generate-indices.
+Second, run SBT from within generate-indices.
 
     #~> cd generate-indices
     #~/generate-indices> sbt
     ...
     >
 
-You will see an SBT prompt once all dependencies are resolved and the project is loaded.
+You will see an SBT `>` prompt once all dependencies are resolved and the project is loaded.
 
-In SBT, run `one-jar` to compile and package the self-contained runnable JAR.
+Lastly, in SBT, run `one-jar` to compile and package the self-contained runnable JAR.
 
     > one-jar
     ...
@@ -45,6 +45,13 @@ In SBT, run `one-jar` to compile and package the self-contained runnable JAR.
     [success] Total time: 9 s
 
 Note the resulting one-jar enabled JAR is placed into the **generate-indices/target** directory.
+
+In a separate shell, attempt to run your newly created JAR.
+
+    #/> java -jar ~/generate-indices/target/generate-indices-0.2-one-jar.jar
+    Usage: generate-indices.jar [root dir name]
+
+Yay!
 
 ## Licensing
 
