@@ -48,7 +48,7 @@ Note the resulting one-jar enabled JAR is placed into the **generate-indices/tar
 
 In a separate shell, attempt to run your newly created JAR.
 
-    #/> java -jar ~/generate-indices/target/generate-indices-0.2-one-jar.jar
+    #~> java -jar ~/generate-indices/target/generate-indices-0.2-one-jar.jar
     Usage: generate-indices.jar [root dir name]
 
 Yay!
