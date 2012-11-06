@@ -16,9 +16,9 @@ Let's say you want to generate index.html pages for all files and directories un
 
 ## Building 
 
-This project is built using <a href="https://github.com/harrah/xsbt">SBT (the Simple Build Tool)</a>.
+This project is built using <a href="https://github.com/harrah/xsbt">SBT (the Simple Build Tool)</a> **0.12.1**.
 
-To clone+build this project, you must have <a href="http://www.scala-sbt.org/release/docs/Getting-Started/Setup">SBT installed and configured on your computer</a>.
+To clone+build this project, you must have <a href="http://www.scala-sbt.org/release/docs/Getting-Started/Setup">SBT 0.12.1 installed and configured on your computer</a>.
 
 First, clone the repository.
 
