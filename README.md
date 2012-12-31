@@ -6,7 +6,7 @@ Meh.
 
 ## Using
 
-Download the latest runnable JAR <a href="https://github.com/markkolich/generate-indices/tree/master/downloads">here</a>.
+Download the latest runnable JAR <a href="https://github.com/markkolich/generate-indices/raw/master/downloads/generate-indices-0.2-one-jar.jar">here</a>.
 
 The JAR is self-contained courtesy of the <a href="https://github.com/sbt/sbt-onejar">sbt-onejar</a> plugin.  Although the project is written in Scala, you don't need Scala to run it -- just a working JVM.
 
