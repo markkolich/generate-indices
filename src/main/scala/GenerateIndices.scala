@@ -24,8 +24,18 @@ object GenerateIndices {
   }
 
   private def generateIndex(root: File, dir: File) = {
-    val dirs = dir.listFiles.filter(_.isDirectory).map(_.getName + "/").toList.sorted
-    val files = dir.listFiles.filter(f => f.isFile && f.getName != "index.html").map(_.getName).toList.sorted
+    val dirs = dir.listFiles.filter(f => {
+      val name = f.getName
+      f.isDirectory() &&
+      !name.startsWith(".git")
+    }).map(_.getName + "/").toList.sorted
+    val files = dir.listFiles.filter(f => {
+      val name = f.getName
+      f.isFile &&
+      name != "index.html" &&
+      name != "README.md" &&
+      !name.startsWith(".git")
+    }).map(_.getName).toList.sorted
     // When using an embedded stylesheet in an XML literal, a double curly brace
     // "{{" or "}}" is the escape pattern mojo to actually get a curly brace.
     <html>
@@ -33,7 +43,7 @@ object GenerateIndices {
     <body>
       <h1>{ path(root, dir) }</h1>
       <ul>
-        <li><a href="../">..</a></li>
+        { if(dir != root) { <li><a href="../">..</a></li> } }
         { for (f <- dirs ::: files) yield <li><a href={ f }>{ f }</a></li> }
       </ul>
       {Unparsed("<hr/>")}

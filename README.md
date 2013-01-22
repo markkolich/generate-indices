@@ -6,13 +6,13 @@ Meh.
 
 ## Using
 
-Download the latest runnable JAR <a href="https://github.com/markkolich/generate-indices/raw/master/downloads/generate-indices-0.2-one-jar.jar">here</a>.
+Download the latest runnable JAR <a href="http://markkolich.github.com/downloads/generate-indices/0.3/generate-indices-0.3-one-jar.jar">here</a>.
 
 The JAR is self-contained courtesy of the <a href="https://github.com/sbt/sbt-onejar">sbt-onejar</a> plugin.  Although the project is written in Scala, you don't need Scala to run it -- just a working JVM.
 
 Let's say you want to generate index.html pages for all files and directories under directory **foobar**, then run ...
 
-    #~/> java -jar generate-indices-0.2-one-jar.jar foobar
+    #~/> java -jar generate-indices-0.3-one-jar.jar foobar
 
 ## Building 
 
@@ -38,9 +38,9 @@ Lastly, in SBT, run `one-jar` to compile and package the self-contained runnable
     > one-jar
     ...
     [info] Compiling 1 Scala source to ~/generate-indices/target/classes...
-    [info] Packaging ~/generate-indices/target/generate-indices-0.2.jar ...
+    [info] Packaging ~/generate-indices/target/generate-indices-0.3.jar ...
     [info] Done packaging.
-    [info] Packaging ~/generate-indices/target/generate-indices-0.2-one-jar.jar ...
+    [info] Packaging ~/generate-indices/target/generate-indices-0.3-one-jar.jar ...
     [info] Done packaging.
     [success] Total time: 9 s
 
@@ -48,7 +48,7 @@ Note the resulting one-jar enabled JAR is placed into the **generate-indices/tar
 
 In a separate shell, attempt to run your newly created JAR.
 
-    #~> java -jar ~/generate-indices/target/generate-indices-0.2-one-jar.jar
+    #~> java -jar ~/generate-indices/target/generate-indices-0.3-one-jar.jar
     Usage: generate-indices.jar [root dir name]
 
 Yay!
