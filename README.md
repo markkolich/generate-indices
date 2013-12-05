@@ -6,7 +6,7 @@ Meh.
 
 ## Using
 
-Download the latest runnable JAR <a href="http://markkolich.github.com/downloads/generate-indices/0.3/generate-indices-0.3-one-jar.jar">here</a>.
+Download the latest runnable JAR <a href="http://markkolich.github.io/downloads/generate-indices/0.3/generate-indices-0.3-one-jar.jar">here</a>.
 
 The JAR is self-contained courtesy of the <a href="https://github.com/sbt/sbt-onejar">sbt-onejar</a> plugin.  Although the project is written in Scala, you don't need Scala to run it -- just a working JVM.
 
@@ -16,9 +16,9 @@ Let's say you want to generate index.html pages for all files and directories un
 
 ## Building 
 
-This project is built using <a href="https://github.com/harrah/xsbt">SBT (the Simple Build Tool)</a> **0.12.1**.
+This project is built using <a href="https://github.com/sbt/sbt">SBT</a>.
 
-To clone+build this project, you must have <a href="http://www.scala-sbt.org/release/docs/Getting-Started/Setup">SBT 0.12.1 installed and configured on your computer</a>.
+To clone+build this project, you must have <a href="http://www.scala-sbt.org/release/docs/Getting-Started/Setup">SBT installed and configured on your computer</a>.
 
 First, clone the repository.
 
